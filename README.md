@@ -1,5 +1,4 @@
 # 🌬️ AirQI-LLM: Air Quality Analysis System
-
 An intelligent Air Quality Analysis Tool that combines **Machine Learning** and 
 **Large Language Models (LLMs)** via a **Retrieval-Augmented Generation (RAG)** 
 architecture to predict AQI and explain air quality in plain language.
@@ -34,7 +33,6 @@ airqi-llm/
 ---
 
 ## 🧠 System Architecture
-
 **RAG Pipeline:**
 User Query → Retriever → ChromaDB → LLM → Natural Language Response
 
@@ -77,7 +75,7 @@ Dataset → Preprocessing → Model Training → AQI Prediction
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/airqi-llm.git
+git clone https://github.com/SamikshyaSaud/airqi-llm.git
 cd airqi-llm
 ```
 
@@ -86,9 +84,9 @@ cd airqi-llm
 pip install -r requirements.txt
 ```
 
-### 3. Run the app
+### 3. Run the notebook
 ```bash
-streamlit run src/app.py
+jupyter notebook notebooks/airqi_analysis.ipynb
 ```
 
 ---
@@ -108,63 +106,9 @@ streamlit run src/app.py
 ---
 
 ## 👩‍💻 Author
-**Samikshya Saud**
+**Samikshya Saud** | [LinkedIn](https://www.linkedin.com/in/samikshya-saud-728127285/)
 
 ---
 
 ## 📜 License
 MIT License
-```
-
----
-
-## 5. 📁 Suggested Folder Structure to Upload
-```
-airqi-llm/
-│
-├── data/
-│   └── us_air_quality_sample.csv
-├── knowledge_base/
-│   ├── aqi_standards.md
-│   ├── health_impacts.md
-│   └── pollutant_info.txt
-├── models/
-│   └── trained_model.pkl
-├── notebooks/
-│   └── airqi_analysis.ipynb
-├── src/
-│   ├── ml_pipeline.py
-│   ├── rag_pipeline.py
-│   └── app.py
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 6. 📦 requirements.txt Content
-```
-pandas
-numpy
-scikit-learn
-langchain
-chromadb
-streamlit
-gradio
-huggingface-hub
-sentence-transformers
-```
-
----
-
-## 7. 🚫 .gitignore Content
-```
-__pycache__/
-*.pyc
-.env
-*.pkl
-chroma_db/
-.ipynb_checkpoints/
-venv/
-*.csv
